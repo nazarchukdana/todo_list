@@ -42,7 +42,7 @@ const TodoList = () => {
                         value={listInputs[index] || ''}
                         onChange={(e) => handleListInputChange(index, e.target.value)}/>
                     <button className="add-list-button" onClick={() =>handleAddList(index)}>Add List</button>
-
+                </div>
             </div>
         ))}
       </div>
