@@ -34,6 +34,15 @@ const TodoList = () => {
                     <h3>{todo.heading}</h3> {/* Display the heading here */}
                     <button className="delete-button-heading">Delete Heading </button>
                 </div>
+                <div className="add_list">
+                    <input
+                        type="text"
+                        className="list-input"
+                        placeholder="Add List"
+                        value={listInputs[index] || ''}
+                        onChange={(e) => handleListInputChange(index, e.target.value)}/>
+                    <button className="add-list-button" onClick={() =>handleAddList(index)}>Add List</button>
+
             </div>
         ))}
       </div>
