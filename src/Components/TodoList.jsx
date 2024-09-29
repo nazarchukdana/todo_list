@@ -46,6 +46,13 @@ const TodoList = () => {
                     <button className="delete-button-heading">Delete Heading </button>
                 </div>
                 <div className="add_list">
+                    <ul>
+                        {todos.lists.map((list, listIndex) => (
+                            <li key={listIndex} className="todo+inside_list">
+                                <p>{list}</p>
+                            </li>
+                        ))}
+                    </ul>
                     <input
                         type="text"
                         className="list-input"
