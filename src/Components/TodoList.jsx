@@ -40,7 +40,7 @@ const TodoList = () => {
             value={headingInput}
             onChange={(e) => setHeadingInput(e.target.value)} 
         />
-            <button className="add-list-button" onClick={handleAddTodo}>Add Heading</button>
+            <button className="add-list-button" onClick={handleAddTodo()}>Add Heading</button>
         </div>
       </div>
       <div className="todo_main">
